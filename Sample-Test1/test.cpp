@@ -6,6 +6,14 @@ TEST(TestCaseName, TestName) {
   EXPECT_TRUE(true);
 }
 
+TEST(calc, getSumSumTest) {
+	calc calculator;
+
+	EXPECT_EQ(calculator.getSumSum(0,0,0), 0);
+	EXPECT_EQ(calculator.getSumSum(1, 1, 1), 3);
+	EXPECT_EQ(calculator.getSumSum(-1, -1, -1), -3);
+}
+
 TEST(TestCaseName, getGopTest) {
 	calc c;
 	EXPECT_EQ(c.getGop(1,2), 2);
@@ -20,3 +28,4 @@ TEST(ZegopCase, ZegopTest) {
 	EXPECT_EQ(32, calc.getZegop(2, 5));
 	EXPECT_EQ(100, calc.getZegop(100, 1))
 }
+
