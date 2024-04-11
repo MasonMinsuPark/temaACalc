@@ -1,0 +1,3 @@
+class calc {
+public:
+};
